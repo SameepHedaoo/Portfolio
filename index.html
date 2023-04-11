@@ -5,17 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
   <!--CSS Styles -->
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <!-- <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-portfolio-16.png"> -->
 
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Sameep Hedaoo | UI/UX Designer</title>
+  <title>Sameep Hedaoo | Passionate IT Student | Web Developer | AI/ML Enthusiast | Android Developer</title>
 </head>
 
 <body>
@@ -26,6 +27,7 @@
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#cv" class="nav-link">CV</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
@@ -42,8 +44,9 @@
     <div class="bio animate__animated animate__shakeX">
       <h2 class="bio-title">Hi there! My name is Sameep</h2>
       <p class="bio-text">
-        I'm currently in my third year of college studying UI/UX design. I have a passion for
-        creating user-friendly and visually appealing designs that enhance the user's experience.
+        I am Sameep Hedaoo, an IT student specializing in web development, AI/ML, Android
+        development, and Python. I build responsive websites with payment integration and have experience in UX/UI
+        design. Contact me to learn more about my skills and experience.
       </p>
     </div>
   </section>
@@ -86,8 +89,10 @@
         <img src="assets/images//Youth Cares-logos_black.png" alt="netflic-clone" loading="lazy" class="project-pic" />
         <h3 class="project-title">Donation Website</h3>
         <p class="project-details">
-          The Donation website is a platform designed to accept online donations from people who want to contribute to a
-          specific cause or organization. The website features a simple and user-friendly interface, making it easy for
+          The Donation website is a platform designed to accept online donations from people who want to contribute to
+          a
+          specific cause or organization. The website features a simple and user-friendly interface, making it easy
+          for
           visitors to find and donate to their preferred causes.
         </p>
         <a href="https://github.com/SameepHedaoo/Donation-Website.github.io" target="_blank" class="project-link">Check
@@ -108,8 +113,8 @@
     </div>
   </section>
 
-  <!-- More about -->
-  <section class="more-about">
+  <!-- CV Download -->
+  <section class="more-about" id="cv">
     <div class="container">
       <div class="section-title text-center">
         <h2></i>CV Download⬇</h2>
@@ -158,11 +163,12 @@
     <div class="socials">
       <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy"
           class="socicon" /></a>
-      <a href="#" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy"
+      <a href="https://www.instagram.com/iamsameep/?next=%2F&hl=en" target="_blank"><img
+          src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" /></a>
+      <a href="https://www.linkedin.com/in/sameep-hedaoo-35475222b/" target="_blank"><img
+          src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+      <a href="https://github.com/SameepHedaoo" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github"
           class="socicon" /></a>
-      <a href="#" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
-          class="socicon" /></a>
-      <a href="#" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
     </div>
     <p class="copy">&copy; Copyright 2023</p>
   </footer>
@@ -173,6 +179,28 @@
   <!-- Ion icons scripts -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.projects-container').slick({
+        slidesToShow: 3, // Number of visible slides at a time
+        slidesToScroll: 1, // Number of slides to scroll at a time
+        autoplay: true, // Auto-play the slider
+        autoplaySpeed: 3000, // Time between slide transitions (in ms)
+        arrows: true, // Show navigation arrows
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+        responsive: [
+          {
+            breakpoint: 768, // Breakpoint for mobile devices
+            settings: {
+              slidesToShow: 1 // Number of visible slides at a time
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
 </body>
 
 </html>

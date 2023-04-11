@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: 'Poppins', sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -399,7 +399,7 @@ footer {
     position: fixed;
     background-color: var(--bg-color);
     flex-direction: column;
-    top: 100px;
+    top: 105px;
     left: 10%;
     width: 80%;
     text-align: center;

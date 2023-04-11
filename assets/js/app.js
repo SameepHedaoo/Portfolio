@@ -21,6 +21,10 @@ navLink.forEach((link) =>
   })
 );
 
+//Carousel
+
+
+
 // scroll to top functionality
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
