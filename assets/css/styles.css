@@ -399,13 +399,14 @@ footer {
     position: absolute;
     background-color: aliceblue;
     flex-direction: column;
-    top: 12.5%;
+    top: 10.5%;
     left: 0%;
     width: 100%;
     text-align: center;
-    transform: translateX(120%);
+    transform: translateX(-120%);
     transition: transform 0.5s ease-in;
     z-index: 1;
+    bottom: 37%;
   }
 
   nav ul li {
