@@ -510,11 +510,22 @@ footer {
 
   .project-container {
     width: 17.875rem;
+    height: 20rem;
+  }
+
+  .project-details {
+    font-size: 0.6rem;
+  }
+
+  .project-pic {
+    width: 46%;
+    height: 36%;
   }
 
   .contact-form-container {
     max-width: 17.75rem;
   }
+
 
   .socials {
     flex-direction: row;
@@ -537,6 +548,5 @@ footer {
     transition: var(--transition);
     display: flex;
     justify-content: center;
-
   }
 }
